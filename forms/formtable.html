@@ -1,0 +1,248 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Student Registration Form</title>
+
+    <style>
+      body {
+        background: #111;
+        font-family: Arial, sans-serif;
+      }
+
+      .form-box {
+        width: 680px;
+        margin: 20px auto;
+        background: white;
+        padding: 15px;
+        border: 2px solid #333;
+      }
+
+      h1 {
+        text-align: center;
+        text-decoration: underline;
+        font-size: 24px;
+      }
+
+      .container {
+        background: #aa5439;
+        padding: 15px;
+        color: white;
+      }
+
+      .row {
+        margin: 12px 0;
+      }
+
+      label {
+        display: inline-block;
+        width: 110px;
+        font-weight: bold;
+        font-size: 13px;
+      }
+
+      input,
+      select,
+      textarea {
+        width: 145px;
+        height: 18px;
+      }
+
+      textarea {
+        height: 60px;
+      }
+
+      .small {
+        width: 55px;
+      }
+
+      .note {
+        font-size: 12px;
+        margin-left: 5px;
+      }
+
+      .gender {
+        width: auto;
+      }
+
+      .hobby {
+        margin-left: 110px;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 10px;
+        color: white;
+      }
+
+      table,
+      th,
+      td {
+        border: 1px solid #222;
+      }
+
+      th {
+        font-size: 12px;
+      }
+
+      td {
+        height: 20px;
+      }
+
+      table input {
+        width: 140px;
+      }
+
+      .course {
+        margin-left: 110px;
+      }
+
+      button {
+        margin-top: 15px;
+        margin-left: 270px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="form-box">
+      <h1>STUDENT REGISTRATION FORM</h1>
+
+      <div class="container">
+        <div class="row">
+          <label>FIRST NAME</label>
+          <input type="text" />
+          <span class="note">(max 30 characters a-z and A-Z)</span>
+        </div>
+
+        <div class="row">
+          <label>LAST NAME</label>
+          <input type="text" />
+          <span class="note">(max 30 characters a-z and A-Z)</span>
+        </div>
+
+        <div class="row">
+          <label>DATE OF BIRTH</label>
+
+          <input type="date" />
+        </div>
+
+        <div class="row">
+          <label>EMAIL ID</label>
+          <input type="email" />
+        </div>
+
+        <div class="row">
+          <label>MOBILE NUMBER</label>
+          <input type="text" />
+          <span class="note">(10 digit number)</span>
+        </div>
+
+        <div class="row">
+          <label>GENDER</label>
+          Male <input class="gender" type="radio" name="g" /> Female
+          <input class="gender" type="radio" name="g" />
+        </div>
+
+        <div class="row">
+          <label>ADDRESS</label>
+          <textarea name="" id=""></textarea>
+        </div>
+
+        <div class="row">
+          <label>CITY</label>
+          <input type="text" />
+          <span class="note">(max 30 characters a-z and A-Z)</span>
+        </div>
+
+        <div class="row">
+          <label>PIN CODE</label>
+          <input type="text" />
+          <span class="note">(6 digit number)</span>
+        </div>
+
+        <div class="row">
+          <label>STATE</label>
+          <input type="text" />
+          <span class="note">(max 30 characters a-z and A-Z)</span>
+        </div>
+
+        <div class="row">
+          <label>COUNTRY</label>
+          <input type="text" value="India" />
+        </div>
+
+        <div class="row">
+          <label>HOBBIES</label>
+
+          <div class="hobby">
+            Drawing <input type="checkbox" /> Singing
+            <input type="checkbox" /> Dancing
+            <input type="checkbox" /> Sketching <input type="checkbox" />
+            <br />
+            Others <input type="checkbox" />
+            <input type="text" />
+          </div>
+        </div>
+
+        <div class="row">
+          <label>QUALIFICATION</label>
+
+          <table>
+            <tr>
+              <th>Sl.No.</th>
+              <th>Examination</th>
+              <th>Board</th>
+              <th>Percentage</th>
+              <th>Year of Passing</th>
+            </tr>
+
+            <tr>
+              <td>1</td>
+              <td>Class X</td>
+              <td><input /></td>
+              <td><input /></td>
+              <td><input /></td>
+            </tr>
+
+            <tr>
+              <td>2</td>
+              <td>Class XII</td>
+              <td><input /></td>
+              <td><input /></td>
+              <td><input /></td>
+            </tr>
+
+            <tr>
+              <td>3</td>
+              <td>Graduation</td>
+              <td><input /></td>
+              <td><input /></td>
+              <td><input /></td>
+            </tr>
+
+            <tr>
+              <td>4</td>
+              <td>Masters</td>
+              <td><input /></td>
+              <td><input /></td>
+              <td><input /></td>
+            </tr>
+          </table>
+        </div>
+
+        <table>
+          <tr>
+            <td>BCA<input type="radio" name="c" /></td>
+            <td>B.Com<input type="radio" name="c" /></td>
+            <td>B.Sc<input type="radio" name="c" /></td>
+            <td>B.A <input type="radio" name="c" /></td>
+          </tr>
+        </table>
+
+        <button>Submit</button>
+        <button>Reset</button>
+      </div>
+    </div>
+  </body>
+</html>

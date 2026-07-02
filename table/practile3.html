@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      td,
+      th {
+        border: 1px solid;
+        padding: 5px;
+      }
+      thead {
+        background-color: rgb(102, 182, 225);
+      }
+      table {
+        border-collapse: collapse;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <thead>
+        <tr>
+          <th colspan="2">Invoice #123456789</th>
+          <th colspan="2">14 January 2025</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td colspan="2">
+            <h3>Pay to:</h3>
+            <p>Acme Billing Co.</p>
+            <p>123 Main St.</p>
+            <p>Cityville, NA 12345</p>
+          </td>
+          <td colspan="2">
+            <h3>Customer:</h3>
+            <p>John Smith</p>
+            <p>321 Willow Way</p>
+            <p>Southeast Northwesternshire, MA 54321</p>
+          </td>
+        </tr>
+        <tr>
+          <td><h3>Name/Description</h3></td>
+          <td align="center"><h3>Qty.</h3></td>
+          <td align="center"><h3>@</h3></td>
+          <td align="center"><h3>Cost</h3></td>
+        </tr>
+        <tr>
+          <td>Paperclips</td>
+          <td align="center">1000</td>
+          <td align="center">0.01</td>
+          <td>10.00</td>
+        </tr>
+        <tr>
+          <td>Staples (box)</td>
+          <td align="center">1000</td>
+          <td align="center">1.00</td>
+          <td>100.0</td>
+        </tr>
+        <tr>
+          <td colspan="3" align="right"><h3>Subtotal</h3></td>
+          <td>110.00</td>
+        </tr>
+        <tr>
+          <td colspan="2" align="right"><h3>Tax</h3></td>
+          <td align="center">8%</td>
+          <td>8.80</td>
+        </tr>
+        <tr>
+          <td colspan="3" align="right"><h3>Grand Total</h3></td>
+          <td><strong>$ 118.80</strong></td>
+        </tr>
+      </tbody>
+      <tfoot></tfoot>
+    </table>
+  </body>
+</html>

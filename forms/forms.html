@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h3>Sports Physical Form</h3>
+
+    <form action="submit.html" method="get">
+      <fieldset>
+        <legend><h4>Athlete Information</h4></legend>
+        <ul>
+          <li>
+            <label for="name">Name:</label>
+            <input type="text" name="username" id="name" />
+          </li>
+          <li>
+            <label for="School">School:</label>
+            <input type="text" name="School" id="School" />
+          </li>
+          <li>
+            <label for="Sport">Sport:</label>
+            <input type="text" name="Sport" id="Sport" />
+          </li>
+          <li>
+            <label for="Parent name">Parent Name:</label>
+            <input type="text" name="Parent name" id="Parent name" />
+          </li>
+          <li>
+            <label for="Contact Number">Contact Number:</label>
+            <input type="text" name="Contact Number" id="Contact Number" />
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset>
+        <legend><h4>Medical History for Athle</h4></legend>
+        <ul>
+          <li>
+            <label for="history-corrusions">History of concussions:</label>
+            <input
+              type="radio"
+              name="history-corrusions"
+              id="history-corrusions_yes"
+              value="history-corrusions_yes"
+            />
+            <label for="history-corrusions_yes"><strong>Yes</strong></label>
+            <input
+              type="radio"
+              name="history-corrusions"
+              id="history-corrusions_no"
+              value="history-corrusions_no"
+            />
+            <label for="history-corrusions_no"><strong>No</strong></label>
+          </li>
+          <li>
+            <label for="previous_surgeries"
+              ><strong>Previous surgeries:</strong></label
+            >
+            <input
+              type="text"
+              name="previous_surgeries"
+              id="previous_surgeries"
+              placeholder="Enter your surgry details"
+            />
+          </li>
+          <li>
+            <label for="fracture">Any bone fractures?:</label>
+            <input
+              type="radio"
+              name="fracture"
+              id="fracture"
+              value="fracture_yes"
+            />
+            <label for="fracture_yes"><strong>Yes</strong></label>
+            <input
+              type="radio"
+              name="fracture"
+              id="fracture"
+              value="fracture_no"
+            />
+            <label for="fracture_no"><strong>No</strong></label>
+          </li>
+          <li>
+            <label for="breating_problem">Asthma or breating problem:</label>
+            <input
+              type="radio"
+              name="breating_problem"
+              id="breating_problem"
+              value="breating_problem_yes"
+            />
+            <label for="breating_problem_yes"><strong>Yes</strong></label>
+            <input
+              type="radio"
+              name="breating_problem"
+              id="breating_problem"
+              value="breating_problem_no"
+            />
+            <label for="breating_problem_no"><strong>No</strong></label>
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset>
+        <legend><h4>Select your Department</h4></legend>
+        <select name="Department" id="Department">
+          <option value="select">Slect your department</option>
+          <option value="CSE">CSE</option>
+          <option value="AIML">AIML</option>
+          <option value="MECHINICAL">MECHINICAL</option>
+          <option value="IT">IT</option>
+        </select>
+      </fieldset>
+      <fieldset>
+        <legend>Select your Hobbies</legend>
+        <input type="checkbox" /><label for="football">Football</label>
+        <input type="checkbox" />
+        <label for="Volleyball">Volleyball</label>
+        <input type="checkbox" />
+        <label for="bad_minton">Badminton</label>
+        <input type="checkbox" />
+        <label for="Cricket">Cricket</label>
+        <input type="checkbox" />
+        <label for="Kho Kho">Kho Kho</label>
+      </fieldset>
+      <fieldset>
+        <legend><h4>Doctor's Recommendation for sports Partiton</h4></legend>
+      </fieldset>
+      <fieldset>
+        <legend>Textarea</legend>
+
+        <label for="address">Address:</label><br />
+        <textarea
+          id="address"
+          name="address"
+          rows="4"
+          cols="40"
+          placeholder="Enter your address"
+        ></textarea>
+      </fieldset>
+      <fieldset>
+        <legend>Mail Details</legend>
+        <label for="email">Email:</label>
+        <input type="text" name="email" placeholder="Enter your mail" />
+
+        <label for="password">Password:</label>
+        <input type="text" name="password" placeholder="Enter your password" />
+      </fieldset>
+      <fieldset>
+        <legend>Date & Time</legend>
+        <label for="date"><strong>Date: </strong></label><input type="date" />
+
+        <br /><label for="time"><strong>Time: </strong></label
+        ><input type="time" />
+      </fieldset>
+      <fieldset>
+        <legend>Document / Images</legend>
+        <label for="Profile_image">Profile:</label>
+        <input
+          type="file"
+          name="Profile_image"
+          accept=".pdf,.docs,.jpg,.png"
+          id="Profile_image"
+        />
+        <br />
+        <label for="resume">Resume:</label>
+        <input type="file" name="profile_image" .accept=".pdf,.docx" />
+        <br />
+        <label for="wordfile">WordFile:</label>
+        <input type="file" name="profile_image" .accept=".pdf,.docx" />
+        <br />
+        <label for="Excel">Excel:</label>
+        <input type="file" name="excel" .accept=".xlxs" />
+      </fieldset>
+      <button type="Submit">Submit</button>
+    </form>
+  </body>
+</html>

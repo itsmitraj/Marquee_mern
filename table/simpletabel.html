@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      td,
+      th {
+        border: 1px solid;
+         padding: 5px;
+      }
+      thead{
+        background-color: rgb(173, 173, 173);
+      }
+      table{
+        border-collapse: collapse;
+       
+      }
+      
+    </style>
+  </head>
+  <body>
+    <table>
+      <colgroup>
+        <col style="background-color: rgb(233, 233, 233)" />
+        <col style="background-color: rgba(233, 233, 233)" />
+        <col style="background-color: rgb(233, 233, 233)" />
+        <col style="background-color: rgb(233, 233, 233)" />
+        </colgroup>
+      <caption>
+        This is the tabel about my companey
+      </caption>
+      <thead>
+        <tr>
+          <th>EmpCode</th>
+          <th>Emp name</th>
+          <th>Job Title</th>
+          <th>Salary (LPA)</th>
+          <tbody>
+            <tr>
+              <td>911</td>
+              <td>MITRAJ SOLANKI</td>
+              <td>Companey Head</td>
+              <td><strong>1CR</strong></td>
+            </tr>
+            <tr>
+              <td>912</td>
+              <td>HENIL GANDHI</td>
+              <td>Develpoper</td>
+              <td rowspan="2">6</td>
+            </tr>
+            <tr>
+              <td>913</td>
+              <td>ABHISHIK SHARMA</td>
+              <td>Tester</td>
+              
+            </tr>
+
+            <tr>
+              <td>914</td>
+              <td>MIHIR CHVADA</td>
+              <td>HR</td>
+              <td>30</td>
+            </tr>
+            <tr>
+              <td>915</td>
+              <td>KP</td>
+              <td>Manger</td>
+              <td>15</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr style="text-align: center ">
+              <td colspan="4" //second option align="center">This is tabel footer</td>
+            </tr>
+          </tfoot>
+        </tr>
+      </thead>
+    </table>
+  </body>
+</html>
