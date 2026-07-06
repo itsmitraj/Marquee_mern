@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <title>Intro to CSS</title>
+    <!-- Internal CSS -->
+    <style>
+      * {
+        background-color: rgb(208, 149, 149);
+      }
+      ul {
+        color: aqua;
+      }
+      .formatting {
+        background-color: rgb(199, 146, 146);
+        font-family: cursive;
+        color: antiquewhite;
+      }
+      a:hover {
+        color: aliceblue;
+        text-decoration: none;
+        font-family:
+          "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans",
+          Arial, sans-serif;
+      }
+      #heading {
+        color: bisque;
+      }
+      h1,
+      p,
+      #Link .formatting {
+        font-family:
+          "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+      }
+      ul li {
+        color: rgb(154, 137, 137);
+        background-color: rgb(159, 159, 202);
+      }
+      div > p {
+        color: blanchedalmond;
+      }
+      input[placeholder] {
+        background-color: rgb(106, 49, 150);
+      }
+      input[id="password"] {
+        background-color: rgb(157, 36, 36);
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="heading">Types of CSS</h1>
+    <p class="formatting">There are three types of CSS:</p>
+    <ul class="formatting">
+      <li class="formatting">Inline CSS</li>
+      <li class="formatting">Internal CSS</li>
+      <li class="formatting">External CSS</li>
+    </ul>
+    <a href="#" id="Link">Click here</a>
+    <section>
+      <div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis sint
+          mollitia provident, sequi voluptate cumque. Et dolores numquam sit
+          commodi a beatae iure nobis neque consequuntur, placeat, itaque
+          praesentium perspiciatis!
+        </p>
+      </div>
+    </section>
+
+    <form action="">
+      <label for="name">Username: </label>
+      <input
+        type="text"
+        id="name"
+        [name="username"
+        placeholder="Enter your name"
+      />
+      <br />
+      <label for="password">Password: </label>
+      <input
+        type="password"
+        id="password"
+        name="password"
+        placeholder="Enter your name"
+        placeholder="Password"
+      />
+      <input type="button" value="Submit" />
+    </form>
+  </body>
+</html>
