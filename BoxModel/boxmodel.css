@@ -1,0 +1,67 @@
+body {
+  font-family: Arial, sans-serif;
+  background: white;
+  margin: 20px;
+}
+
+.header {
+  background: salmon;
+  border: 2px solid black;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+
+.header h1 {
+  margin: 0;
+}
+
+.box {
+  background: rgb(21, 165, 213);
+  border: 5px solid navy;
+  padding: 10px;
+  margin-bottom: 12px;
+}
+
+.list {
+  background: white;
+  border: 5px solid navy;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.list ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.list li {
+  background: rgb(242, 242, 91);
+  margin: 8px 0;
+  padding: 5px;
+}
+
+.content {
+  color: rgb(49, 40, 24);
+}
+
+.padding {
+  color: rgb(56, 32, 56);
+}
+
+.border {
+  color: rgb(38, 23, 23);
+}
+
+.margin {
+  color: rgb(40, 23, 40);
+}
+
+.highlight {
+  background: rgb(219, 45, 45);
+  border: 1px solid black;
+  padding: 2px 5px;
+}
+
+h2 {
+  margin-top: 10px;
+}
