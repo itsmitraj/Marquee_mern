@@ -119,3 +119,14 @@ a:hover {
 .social-icons a:nth-child(4) {
   background: #25d366;
 }
+td,
+th {
+  border: 1px solid;
+  padding: 5px;
+}
+thead {
+  background-color: lightcyan;
+}
+table {
+  border-collapse: collapse;
+}
