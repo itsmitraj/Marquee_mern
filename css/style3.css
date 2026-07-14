@@ -1,0 +1,116 @@
+/* Base styles and typography reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #ffffff;
+  color: #333333;
+  line-height: 1.5;
+  padding: 60px 20px;
+}
+
+/* Container spacing */
+.services-section {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Header styling */
+.services-title {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #1a365d; /* Dark Blue from the image */
+  margin-bottom: 60px;
+}
+
+/* 3-Column Grid Layout */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 50px;
+  row-gap: 40px;
+}
+
+/* Individual card layout */
+.service-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+/* Round circle layout for icons */
+.icon-wrapper {
+  flex-shrink: 0;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  color: #000000;
+  /* Soft shadow effect seen in the screenshot */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(0, 0, 0, 0.03);
+}
+.icon-wrapper:hover {
+  color: red;
+}
+/* Active red highlight state for 'Manual Testing' */
+.icon-wrapper.active {
+  background-color: #f05252; /* Bright Red */
+  color: #ffffff;
+  box-shadow: 0 4px 15px rgba(240, 82, 82, 0.3);
+}
+
+.service-content {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.service-name {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #000000;
+}
+.service-name:hover {
+  color: red;
+}
+
+.service-name.active-text {
+  color: #f05252;
+}
+
+.service-description {
+  font-size: 0.95rem;
+  color: #666666;
+  font-weight: 400;
+}
+
+/* Responsive Breakpoints */
+
+/* Tablet View (2 Columns) */
+@media (max-width: 992px) {
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile View (1 Column) */
+@media (max-width: 600px) {
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .services-title {
+    font-size: 2rem;
+    margin-bottom: 40px;
+  }
+}
