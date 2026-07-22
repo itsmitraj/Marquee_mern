@@ -1,0 +1,443 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Roboto, Arial, sans-serif;
+}
+
+body {
+  background-color: #ffffff;
+  color: #333333;
+}
+
+.abc {
+  width: 90vw;
+  margin: 0 auto;
+  padding: 15px 40px;
+  border-bottom: 1px solid #e0e0e0;
+}
+.main-header {
+  width: 90vw;
+  margin: 0 auto;
+  padding: 15px 40px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.top-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.brand-links {
+  display: flex;
+  gap: 12px;
+}
+
+.btn-brand {
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.btn-flipkart {
+  background-color: #ffc200;
+  color: #000;
+}
+
+.fk-icon {
+  color: #2874f0;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 16px;
+}
+
+.btn-travel {
+  background-color: #f1f2f4;
+  color: #333;
+}
+
+.location-selector {
+  font-size: 14px;
+  color: #666;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.loc-link {
+  color: #2874f0;
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 4px;
+}
+
+.loc-link:hover {
+  text-decoration: underline;
+}
+
+.middle-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+}
+
+.search-container {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border: 1px solid #2874f0;
+  border-radius: 8px;
+  padding: 8px 12px;
+}
+
+.search-icon {
+  color: #888;
+  margin-right: 8px;
+  font-size: 18px;
+}
+
+.search-input {
+  border: none;
+  outline: none;
+  width: 100%;
+  font-size: 15px;
+  color: #333;
+}
+
+.user-actions {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.action-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.arrow {
+  font-size: 18px;
+  line-height: 0;
+  position: relative;
+  top: -2px;
+}
+
+.category-nav {
+  padding: 12px 24px 0 24px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.category-list {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  overflow-x: auto;
+  padding-bottom: 8px;
+}
+
+.category-list::-webkit-scrollbar {
+  display: none;
+}
+.category-list {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.category-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  padding-bottom: 8px;
+  min-width: 70px;
+}
+
+.icon-box {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  border-radius: 12px;
+  background-color: transparent;
+  transition: background-color 0.2s;
+}
+
+.category-item span {
+  font-size: 13px;
+  font-weight: 500;
+  text-align: center;
+  color: #333;
+  white-space: nowrap;
+}
+
+.category-item.active {
+  border-bottom: 3px solid #2874f0;
+}
+
+.category-item.active .icon-box {
+  background-color: #e3edff;
+}
+
+.category-item.active span {
+  color: #000;
+  font-weight: 600;
+}
+
+.category-item:hover .icon-box {
+  background-color: #f1f2f4;
+}
+.discount {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(255, 255, 0);
+}
+
+.img-container {
+  display: flex;
+  width: 100%;
+  gap: 20px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  flex-wrap: nowrap;
+  scroll-behavior: smooth;
+  padding: 10px 0;
+}
+
+/* .img-container:hover {
+    transform: translateY(-20px);
+} */
+
+.img-container > div:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+.img-container::-webkit-scrollbar {
+  height: 8px;
+}
+
+.img-container > div {
+  flex: 0 0 auto;
+  width: 380px; /* Change this if you want larger/smaller images */
+  height: 200px;
+}
+
+.img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+  display: block;
+}
+
+.product-container {
+  display: flex;
+  width: 100%;
+  height: 70%;
+  background-color: rgb(236, 239, 240);
+  border-radius: 20px;
+}
+
+.products {
+  height: 40%;
+  width: 100%;
+  display: flex;
+  gap: 15px;
+  padding-top: 20px;
+  padding-left: 10px;
+  scroll-behavior: smooth;
+}
+
+.products img {
+  background-color: white;
+  width: 90%;
+  height: 90%;
+  display: block;
+  border-radius: 10px;
+}
+
+/* 1. Add a wrapper to hold the buttons relative to the slider */
+.slider-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+/* 2. Update your existing container */
+.img-container-2 {
+  display: flex;
+  gap: 15px;
+  width: 100%;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+
+  /* Hide scrollbar for a cleaner look */
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.img-container-2::-webkit-scrollbar {
+  display: none;
+}
+
+.img-med {
+  flex: 0 0 250px;
+}
+
+.img-container-2 img {
+  border-radius: 20px;
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover; /* Ensures images fill the box without distorting */
+}
+
+/* 4. Style the arrow buttons */
+.scroll-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(255, 255, 255, 0.9);
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 18px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.scroll-btn.left {
+  left: 10px;
+}
+.scroll-btn.right {
+  right: 10px;
+}
+.site-footer {
+  background-color: #212121;
+  color: #fff;
+  padding: 40px 0 30px 0;
+  font-size: 12px;
+}
+
+.footer-container {
+  max-width: 1240px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+/* Individual Column Layout */
+.footer-col {
+  flex: 1;
+  padding-right: 25px;
+}
+
+/* Headers style (ABOUT, HELP, etc.) */
+.footer-col h3 {
+  color: #878787;
+  font-size: 12px;
+  font-weight: 400;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+}
+
+/* Links lists styling */
+.footer-col ul {
+  list-style: none;
+}
+
+.footer-col ul li {
+  margin-bottom: 6px;
+}
+
+.footer-col ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.footer-col ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Address columns styling */
+.footer-address p {
+  color: #ffffff;
+  line-height: 1.5;
+  margin-bottom: 2px;
+  font-weight: 500;
+}
+
+/* Vertical divider between policy and mail columns */
+.footer-border-left {
+  border-left: 1px solid #454d5e;
+  padding-left: 25px;
+}
+
+/* Telephone links color match */
+.phone-link {
+  color: #2874f0;
+  cursor: pointer;
+}
+
+/* Social Media Section Styling */
+.social-section {
+  margin-top: 25px;
+}
+
+.social-section h4 {
+  color: #878787;
+  font-size: 12px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.social-icons i {
+  height: 30px;
+  width: 30px;
+}
+
+.social-icons a:hover {
+  color: #2874f0;
+}
+
+/* Responsive adjustment for smaller screens */
+@media (max-width: 900px) {
+  .footer-container {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .footer-border-left {
+    border-left: none;
+    padding-left: 0;
+  }
+  .footer-col {
+    padding-right: 0;
+  }
+}

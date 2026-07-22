@@ -42,6 +42,9 @@ body {
   align-items: flex-start;
   gap: 20px;
 }
+.service-card:hover .icon-wrapper {
+  color: red;
+}
 
 /* Round circle layout for icons */
 .icon-wrapper {
