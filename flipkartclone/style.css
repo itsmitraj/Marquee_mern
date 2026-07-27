@@ -282,6 +282,7 @@ body {
   display: flex;
   align-items: center;
   width: 100%;
+  overflow: scroll;
 }
 
 /* 2. Update your existing container */

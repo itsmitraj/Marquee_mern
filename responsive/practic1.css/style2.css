@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: gilroy, sans-serif;
+}
+
+html,
+body {
+  height: 100vh;
+  width: 100vw;
+}
+
+#container {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 100px);
+  /* What is the Difference Btweeen Cells and Items */
+  /* grid-row and grid-col */
+  /* grid-template-areas:; */
+  gap: 10px;
+  align-content: center;
+  justify-content: center;
+}
+
+/* Different Color to each Items  */
+#item-1 {
+  background-color: rgb(194, 177, 230);
+  grid-row: span 2;
+  border-radius: 20px;
+}
+#item-2 {
+  background-color: rgb(245, 130, 162);
+  grid-column: span 2;
+   border-radius: 20px;
+}
+#item-3 {
+  background-color: rgb(191, 209, 138);
+   border-radius: 20px;
+}
+#item-4 {
+  background-color: rgb(252, 222, 111);
+   border-radius: 20px;
+
+  
+}
+#item-5 {
+  background-color: rgb(245, 160, 115);
+   border-radius: 20px;
+  grid-column: span 2;
+}
+#item-6 {
+  background-color: rgb(180, 204, 217);
+   border-radius: 20px;
+  
+}

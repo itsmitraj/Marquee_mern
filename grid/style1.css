@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #f5f5f5;
+}
+
+.board{
+    width: 320px;
+    height: 320px;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    border: 3px solid rgb(125, 102, 102);
+}
+
+.board div{
+    border: 1px solid #5e2929;
+}
+.board div:nth-child(even){
+    background-color: black;
+}
+
+
+.black{
+    background: #e1d8d8;
+}
+\
+.white{
+    background: #fff;
+}

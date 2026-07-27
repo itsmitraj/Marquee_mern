@@ -1,0 +1,20 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 50px;
+  grid-auto-rows: 200px;
+  grid-auto-columns: 200px;
+  padding: 40px;
+  border-radius: 5%;
+}
+
+.items {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.items img {
+  height: 100%;
+  width: 100%;
+}
