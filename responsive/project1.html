@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="project1.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <aside class="sidebar">
+        <div class="logo">
+          <h2>Afghan Product</h2>
+          <h3>Admin Panel</h3>
+        </div>
+
+        <ul>
+          <li class="active">
+            <i class="fa-solid fa-table-columns"></i> Dashboard
+          </li>
+          <li><i class="fa-solid fa-users"></i> Users</li>
+          <li><i class="fa-solid fa-box"></i> Products</li>
+          <li><i class="fa-solid fa-cart-shopping"></i> Orders</li>
+          <li><i class="fa-solid fa-layer-group"></i> Categories</li>
+          <li><i class="fa-solid fa-message"></i> Messages</li>
+          <li><i class="fa-solid fa-chart-line"></i> Analytics</li>
+          <li><i class="fa-solid fa-gear"></i> Settings</li>
+        </ul>
+      </aside>
+
+      <main class="main">
+        <header class="topbar">
+          <div>
+            <h1>Dashboard</h1>
+            <h5>Manage dashboard here</h5>
+          </div>
+
+          <div class="top-right">
+            <input type="text" placeholder="Search..." />
+
+            <i class="fa-regular fa-bell"></i>
+
+            <div class="avatar">A</div>
+          </div>
+        </header>
+
+        <section class="banner">
+          <div class="banner-top">
+            <div>
+              <h2>Welcome back, Admin</h2>
+              <p>Here's your platform performance overview</p>
+            </div>
+
+            <button>Export</button>
+          </div>
+
+          <div class="mini-cards">
+            <div class="mini-card">
+              <p><i class="fa-solid fa-cart-arrow-down"></i> Today's Orders</p>
+              <br />
+              <h2>47</h2>
+            </div>
+
+            <div class="mini-card">
+              <p><i class="fa-solid fa-user-secret"></i> New Users</p>
+              <br />
+              <h2>23</h2>
+            </div>
+
+            <div class="mini-card">
+              <p><i class="fa-solid fa-chart-line"></i> Revenue Today</p>
+              <br />
+              <h2>PKR 84K</h2>
+            </div>
+
+            <div class="mini-card">
+              <p>Conversion Rate</p>
+              <h2>3.24%</h2>
+            </div>
+          </div>
+        </section>
+
+        <section class="cards">
+          <div class="card">
+            <h1><i class="fa-solid fa-users"></i> 12,542</h1>
+            <br />
+            <p>Total Users</p>
+            <p>Last Month</p>
+            <br />
+            <h4>progress</h4>
+            <progress max="100" value="40"></progress>
+          </div>
+
+          <div class="card">
+            <h1><i class="fa-brands fa-product-hunt"></i> 3,234</h1>
+            <progress max="100"></progress>
+            <p>Total Products</p>
+          </div>
+
+          <div class="card">
+            <h1><i class="fa-brands fa-first-order"></i> 9,663</h1>
+            <progress max="100"></progress>
+            <p>Total Orders</p>
+          </div>
+
+          <div class="card">
+            <h1><i class="fa-solid fa-dollar-sign"></i> PKR 2.4M</h1>
+            <progress max="100"></progress>
+            <p>Total Revenue</p>
+          </div>
+        </section>
+
+        <section class="bottom">
+          <div class="revenue">
+            <div class="title">
+              <div>
+                <h2>Revenue Analytics</h2>
+                <p>Comprehensive overview of performance metrics</p>
+              </div>
+              <div>
+                <button class="active-btn">This Month</button>
+                <button>This Year</button>
+              </div>
+            </div>
+
+            <div class="month">
+              <div class="month-text">
+                <span>January</span>
+
+                <b>$120K</b>
+              </div>
+
+              <div class="bar">
+                <div style="width: 60%"></div>
+              </div>
+            </div>
+
+            <div class="month">
+              <div class="month-text">
+                <span>February</span>
+
+                <b>$220K</b>
+              </div>
+
+              <div class="bar">
+                <div style="width: 75%"></div>
+              </div>
+            </div>
+
+            <div class="month">
+              <div class="month-text">
+                <span>March</span>
+
+                <b>$240K</b>
+              </div>
+
+              <div class="bar">
+                <div style="width: 85%"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="live-activity-card">
+            <div class="activity-header">
+              <h2>Live Activity</h2>
+              <span class="live-dot"> <span></span> Live </span>
+            </div>
+
+            <div class="activity-item">
+              <div class="icon blue">🛒</div>
+              <div>
+                <p><b>Ahmad Sharif</b> placed a new order</p>
+                <small>2 minutes ago</small>
+              </div>
+            </div>
+
+            <div class="activity-item">
+              <div class="icon green">👤</div>
+              <div>
+                <p><b>Fatima Nazari</b> registered as a seller</p>
+                <small>5 minutes ago</small>
+              </div>
+            </div>
+
+            <div class="activity-item">
+              <div class="icon purple">📦</div>
+              <div>
+                <p><b>Hamid Karimi</b> added a new product</p>
+                <small>10 minutes ago</small>
+              </div>
+            </div>
+
+            <div class="activity-item">
+              <div class="icon yellow">⭐</div>
+              <div>
+                <p><b>Sara Ahmad</b> left a 5-star review</p>
+                <small>15 minutes ago</small>
+              </div>
+            </div>
+
+            <button class="view-btn">View All Activities</button>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

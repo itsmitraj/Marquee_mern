@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  height: 100vh;
+  width: 100vw;
+  background-color: gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.MainSection {
+  padding: 20px;
+  box-sizing: border-box;
+  height: 100%;
+  width: 80vw;
+  background-color: white;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 100px 1fr 1fr 100px;
+  grid-template-areas:
+    "head head head"
+    "side con1 con1"
+    "side con2 con3"
+    "foot foot foot";
+  gap: 10px;
+}
+div {
+  height: 100%;
+  width: 100%;
+}
+.header {
+  grid-area: head;
+  background-color: yellow;
+}
+.sidebar {
+  grid-area: side;
+  background-color: orangered;
+}
+.content1 {
+  grid-area: con1;
+  background-color: tomato;
+  transition-property: all;
+  transition-duration: 1s;
+  transition-delay: 1ms;
+}
+.content1:hover {
+  background-color: rgb(93, 20, 138);
+  border-radius: solid black 5px;
+}
+.content2:hover {
+  background-color: rgb(93, 20, 138);
+  border-radius: solid black 5px;
+}
+.content3:hover {
+  background-color: rgb(93, 20, 138);
+  border-radius: solid black 5px;
+}
+
+
+.content2 {
+  grid-area: con2;
+  background-color: purple;
+}
+.content3 {
+  grid-area: con3;
+  background-color: purple;
+}
+.footer {
+  grid-area: foot;
+  background-color: yellow;
+}

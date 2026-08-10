@@ -1,0 +1,150 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f3f3f3;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+}
+
+.card{
+    width:300px;
+    background:#fff;
+    border-radius:8px;
+    box-shadow:0 8px 25px rgba(0,0,0,.15);
+    text-align:center;
+    padding:25px 22px 30px;
+    position:relative;
+}
+
+.menu{
+    position:absolute;
+    top:15px;
+    right:15px;
+    color:#b5b5b5;
+    cursor:pointer;
+}
+
+.profile .image{
+    width:85px;
+    height:85px;
+    margin:auto;
+    position:relative;
+}
+
+.profile img{
+    width:100%;
+    height:100%;
+    border-radius:50%;
+    object-fit:cover;
+}
+
+.status{
+    width:16px;
+    height:16px;
+    background:#25d366;
+    border:3px solid #fff;
+    border-radius:50%;
+    position:absolute;
+    right:2px;
+    bottom:8px;
+}
+
+.profile h2{
+    margin-top:15px;
+    font-size:22px;
+    font-weight:600;
+    color:#333;
+}
+
+.profile p{
+    margin-top:5px;
+    color:#888;
+    font-size:14px;
+}
+
+.stats{
+    display:flex;
+    justify-content:space-between;
+    margin:30px 0 20px;
+}
+
+.stats span{
+    display:block;
+    color:#8b8b8b;
+    font-size:12px;
+    margin-bottom:6px;
+}
+
+.stats h3{
+    color:#333;
+    font-size:18px;
+    font-weight:600;
+}
+
+.description{
+    color:#999;
+    font-size:12px;
+    line-height:1.7;
+    margin-bottom:22px;
+}
+
+.social{
+    display:flex;
+    justify-content:center;
+    gap:12px;
+    margin-bottom:28px;
+}
+
+.social a{
+    width:28px;
+    height:28px;
+    border-radius:50%;
+    color:#fff;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:13px;
+    text-decoration:none;
+}
+
+.social a:nth-child(1){
+    background:#1DA1F2;
+}
+
+.social a:nth-child(2){
+    background:#1877F2;
+}
+
+.social a:nth-child(3){
+    background:#db4437;
+}
+
+.social a:nth-child(4){
+    background:#1769ff;
+}
+
+button{
+    width:180px;
+    height:42px;
+    border:none;
+    outline:none;
+    background:#36c8cf;
+    color:#fff;
+    font-size:15px;
+    border-radius:30px;
+    cursor:pointer;
+    box-shadow:0 8px 15px rgba(54,200,207,.35);
+    transition:.3s;
+}
+
+button:hover{
+    background:#22b7be;
+    transform:translateY(-2px);
+}
